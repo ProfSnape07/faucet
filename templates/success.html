@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Linea Testnet Faucet</title>
+        <link rel="icon" href="static/icon.png" type="image/icon type">
+        <link rel="stylesheet" href="static/main.css">
+    </head>
+
+    <body>
+        <h1 class="h1">Successful!
+        </h1>
+
+        <div class="s-container">
+            <p class="sp1">Request sent successfully! Consider donating.
+                <br>
+                If the address provided has already received tokens today, the transaction will fail at blockchain.
+                <br>
+                Faucet Balance: {{ eth_bal }} ETH
+            </p>
+            <p class="s-explorer-link">
+                <a href="{{ explorer_link }}" target="_blank">View on Explorer
+                </a>
+            </p>
+            <p>Your Transaction Hash: {{ tx_hash }}
+            </p>
+        </div>
+
+        <a class="s-twitter-follow-button" href="https://twitter.com/ProfSnape07" data-show-count="false">Follow Prof Snape</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+        <button class="donation-button" id="modal-button" onclick="copyText()">Copy Donation Address
+        </button>
+
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+              <div class="modal-header">
+                <span class="close">&times;</span>
+                <h3>Address Copied</h3>
+              </div>
+              <div class="modal-body">
+                <p>Address has been copied to your clipboard.</p>
+                <p>You can donate on any chain of your choice.</p>
+              </div>
+              <div class="modal-footer">
+                <h4>Thanks&hearts;</h4>
+              </div>
+            </div>
+          </div>
+
+        <script src="static/script.js">
+        </script>
+    </body>
+</html>

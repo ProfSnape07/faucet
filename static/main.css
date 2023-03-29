@@ -1,0 +1,193 @@
+body {
+    max-width: 50rem;
+    margin: 0 auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #abaaaa;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    float: left;
+    margin-left: 10%;
+}
+  
+.h1 {
+    font-size: 26px;
+    text-align: center;
+    margin-top: 1%;
+}
+
+.connect_wallet_button {
+    display: inline;
+    width: auto;
+    float: right;
+    margin-right: 10%;
+    padding: 10px;
+    border-color: antiquewhite;
+    border-radius: 20px;
+    font-size: 16px;
+    line-height: 1.0;
+    color: antiquewhite;
+    background-color: #008CBA;
+    cursor: pointer;
+}
+  
+#connect_wallet_button:hover {
+    background-color: #0077B5;
+}
+
+.p1 {
+    text-align: left;
+    margin-left: 10%;
+    margin-top: 5%;
+    font-size: 20px;
+}
+
+.p2 {
+    text-align: justify;
+    margin-left: 10%;
+    margin-bottom: 5%;
+    font-size: 20px;
+}
+
+.zkEVM {
+    font-size: 24px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 10%;
+    font-weight: bold ;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.input-box {
+    width: 80%;
+    float: left;
+    margin-left: 10%;
+    padding: 0.5rem;
+    border: 3px solid #7b7878;
+    border-radius: 20px;
+    font-size: 24px;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #eae7e7;
+}
+
+.submit-button {
+    display: block;
+    min-width: min-content;
+    max-width: max-content;
+    float: right;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-right: 10%;
+    padding: 8px;
+    border-color: rgb(255, 255, 255);
+    border-radius: 12px;
+    font-size: 16px;
+    line-height: 1.0;
+    color: rgb(0, 0, 0);
+    background-color: #fdfdfd;
+    cursor: pointer;
+}
+
+.twitter-follow-button {
+    display: inline;
+    float: left;
+    margin-left: 10%;
+}
+
+.donation-button {
+    display: inline;
+    float: right;
+    margin-right: 10%;
+    height: auto;
+    padding: 3px;
+    border-radius: 15px;
+    background-color: #c7c3c3;
+    line-height: 1;
+    cursor: grab;
+}
+
+
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 50px;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%, 0);
+    width: auto;
+    height: auto;
+    text-align: justify;
+}
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+  
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+} 
+.close:hover, .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+.modal-header {
+    padding: 1px 10px;
+    background-color: #656565;
+    color: white;
+}
+.modal-body {
+    padding: 1px 10px;
+}
+.modal-footer {
+    padding: 1px 10px;
+    background-color: #656565;
+    color: white;
+}
+
+.s-container {
+    margin-left: 20%;
+}
+
+.s-twitter-follow-button{
+    margin-left: 20%;
+}
+
+.line {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.footer {
+    margin-left: 10%;
+    margin-right: 10%;
+}

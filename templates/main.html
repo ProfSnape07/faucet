@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Linea Testnet Faucet</title>
+        <link rel="icon" href="static/icon.png" type="image/icon type">
+        <link rel="stylesheet" href="static/main.css">
+    </head>
+
+    <body>
+        <h1 class="h1"><img class="logo" src="static/icon.png"> Linea Testnet Faucet
+            <button class="connect_wallet_button" id="connect_wallet_button">Connect Wallet</button>
+        </h1>
+
+        <p class="p2">
+            Each address can receive funds from this faucet only once everyday.
+            <br> <br>
+            Click on "Connect Wallet" button to enter your MetaMask address.
+            <br> <br>
+            You can also enter your address manually.
+        </p>
+
+        <form action="/faucet" method="POST">
+            <div class="zkEVM">
+                <label for="recipient_address">Address:</label>
+            </div>
+            <div class="box-input">
+                <input class="input-box" id="recipient_address" name="recipient_address" required type="text" placeholder="Your Address">
+            </div>
+            <div class="button-submit">
+                <input class="submit-button" type="submit" value="Submit">
+            </div>
+        </form>
+        <br><br><br><br><br><br><br>
+
+        <a class="twitter-follow-button" href="https://twitter.com/ProfSnape07" data-show-count="false">Follow Prof Snape</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+        <button class="donation-button" id="modal-button" onclick="copyAdd()">Copy "Omen" Address
+        </button>
+
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+              <div class="modal-header">
+                <span class="close">&times;</span>
+                <h3>Address Copied</h3>
+              </div>
+              <div class="modal-body">
+                <p>Address has been copied to your clipboard.</p>
+                <p>Search on DEXs.</p>
+              </div>
+              <div class="modal-footer">
+                <h4>Thanks&hearts;</h4>
+              </div>
+            </div>
+          </div>
+
+        <br><br>
+        <hr class="line">
+        <p class="footer">
+            This faucet drips a very small amount of test ETH and a custom token "Omen".
+            <br>
+            Users are free to play around with the token and test Linea.
+            <br>
+            Most of DEXs would require you to search by token address before "Omen" appears for trading.
+        </p>
+
+        <script src="static/script.js">
+        </script>
+
+    </body>
+</html>
