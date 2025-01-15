@@ -2,7 +2,14 @@ import os
 import json
 from flask import Flask, request, render_template
 from web3 import Web3
+from dotenv import load_dotenv
+import os
 
+
+load_dotenv()
+eth_provider = os.getenv("ETH_PROVIDER")
+private_key = os.getenv("PRIVATE_KEY")
+print(eth_provider, private_key)
 
 app = Flask(__name__, template_folder='templates', static_folder='static')
 
@@ -16,9 +23,8 @@ def index():
 with open(os.path.join(os.path.dirname(__file__), 'contracts', 'my_contract.abi')) as f:
     abi = json.load(f)
 
-eth_provider = "https://consensys-zkevm-goerli-prealpha.infura.io/v3/fc6f37c1d4214a1ca3046d657c912ec8"
+
 web3 = Web3(Web3.HTTPProvider(eth_provider))
-private_key = "c36f49788d7be619c1d2b7b0ec99bbbc14d9a43195772a493fcae6f1a88d2628"
 account = web3.eth.account.privateKeyToAccount(private_key)
 from_address = web3.toChecksumAddress(account.address)
 contract_address = '0x3677Dd8370468f9Ef474877B51657E7D81f9123F'
